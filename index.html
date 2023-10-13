@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="resource/css/index.css" />
+</head>
+
+<body id="body" onload="closeModal()">
+    <div class="container-playground-main" id="main-playground">
+        <!-- score pannel -->
+        <div class="item-score-pannel" id="score-pannel">
+            <div class="item-banner">
+                &nbsp;ROCK <br /> &nbsp;PAPER <br /> &nbsp;SCISSORS
+            </div>
+            <div class="score">
+                <div class="item-computer-score">
+                    <div class="computer-score-banner"><br />COMPUTER <br />SCORE</div>
+                    <div class="computer-score" id="computerScore" type="number" value="0">
+                        0
+                    </div>
+                </div>
+                <div class="item-your-score">
+                    <div class="your-score-banner">
+                        <br /> YOUR <br /> SCORE
+                    </div>
+                    <div class="your-score" id="yourScore" type="number" value="0">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Playing area-->
+
+        <div class="item-game-play-area" id="game-play-area">
+            <div id="choice" class="">
+                <button class="rock" id="rock"></button>
+                <img src="resource/img/Line 1.png" class="line1" />
+                <button class="scissors" id="scissors"></button>
+
+                <br />
+                <img src="resource/img/Line 3.png" class="line3" />
+                <span class="cent"><button class="paper" id="paper"></button>
+            <img src="resource/img/Line 2.png" class="line2" />
+          </span>
+            </div>
+        </div>
+        <br /><br /><br />
+        <!-- my Result Area game -->
+        <div class="inactive" id="result">
+            <div id=" result-section">
+                <div class="ali-gn">
+                    <!-- your pick -->
+                    <div class="result-item1">
+                        <span class="text5">YOU PICKED</span><br />
+                        <button class=" " id="user-choice-button"></button>
+
+                    </div>
+
+                    &nbsp; &nbsp; &nbsp;
+                    <div class="inactive result-item2" id="result-id-item2">
+                        <span class="txt1" id="youL">YOU WIN</span><br />
+                        <span class="txt2" id="tie-hide">AGAINST PC</span><br />
+                        <button class="play-again-but" id="playAgain">PLAY AGAIN</button>
+                    </div>
+                    <!-- pc pick-->
+                    &nbsp; &nbsp; &nbsp;
+                    <div class="result-item3">
+                        <span class="text5">PC PICKED</span><br />
+                        <button class=" " id="comp-choice-button"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my hurry page -->
+    <div class="inactive" id="hurrayPage">
+        <div class="hurray">
+            <div class="hurray-cup-stars"></div>
+            <div>
+                <span class="text3"> HURRAY!!</span><br />
+                <span class="text4">YOU WON THE GAME</span><br />
+            </div>
+            <div>
+                <button class="p-again" id="playAgainHurrayPage">PLAY AGAIN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- rules section -->
+    <div class="rules-next-but">
+        <div id="openModalBtn" class="rules-but">
+            <span class="rules-text"> RULES </span>
+        </div>
+        &nbsp; &nbsp; &nbsp;
+        <div id="nextButton" class="inactive next-but">
+            <span> NEXT </span>
+        </div>
+    </div>
+    <!-- Rule Section here -->
+    <div id="myModal" class="modal">
+
+        <span class="close" id="closeModalBtn"></span>
+        <br />
+        <span class="rules-heading">Game Rules</span>
+        <ul type="square" class="rules-list">
+            <br />
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <br />
+            <li>
+                Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+            </li>
+            <br />
+            <li>
+                Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+            </li>
+            <br />
+            <li>
+                If both players lay down the same hand, each player lays down another hand
+            </li>
+            <br />
+        </ul>
+    </div>
+    <script src="resource/js/gamelogic.js"></script>
+    <script src="resource/js/index.js"></script>
+</body>
+
+</html>
